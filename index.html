@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pixel-Art</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="script" href="stript.js">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <h1>Pixel Art Maker</h1>
+
+  <form name="tablegen">
+    <label>Rows: <input type="text" name="rows" class= "pixel" id="rows"/></label>
+    <label>Cols: <input type="text" name="cols" class= "pixel" id="cols"/></label><br/>
+    <input name="generate" type="button" value="Create Table!" onclick='createTable();' />
+  </form>
+
+  <div id="pixel-container">
+  </div>
+
+  <div id="palette" style="visibility: hidden">
+    <span>Current Selected Color:</span>
+    <div id="colorPicked"></div>
+    <br>
+    <div id="color" style="background-color:white"></div>
+    <div id="color" style="background-color:black"></div>
+    <div id="color" style="background-color:red"></div>
+    <div id="color" style="background-color:orange"></div>
+    <div id="color" style="background-color:yellow"></div>
+    <div id="color" style="background-color:green"></div>
+    <div id="color" style="background-color:blue"></div>
+    <div id="color" style="background-color:violet"></div>
+    <div id="color" style="background-color:purple"></div>
+  </div>
+
+</body>
+
+</html>
