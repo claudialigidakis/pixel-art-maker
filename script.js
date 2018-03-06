@@ -28,20 +28,23 @@ function revealPalette(show) {
 
 }
 
-var colorPickedCurrently = 'black'
+var colorPickedCurrently = ''
+var colorPicked = false
 
 document.querySelector("#palette").addEventListener("click", pickColor);
 
 function pickColor(event) {
   colorPickedCurrently = event.target.style.backgroundColor
   document.querySelector('#colorPicked').style.backgroundColor = colorPickedCurrently
+  colorPicked = true
 }
 
-
+if (colorPicked = true) {
 document.querySelector("#pixel-container").addEventListener("mouseover", paintColor);
 
 function paintColor(event) {
   if (event.target.classList.contains('pixel')) {
     event.target.style.backgroundColor = colorPickedCurrently
   }
+}
 }
